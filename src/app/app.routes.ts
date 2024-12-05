@@ -13,7 +13,7 @@ export const routes: Routes = [
       },
       {
           path: 'services',
-          component: TransactionComponent
+          component: AccountComponent
       },
       {
           path: 'login',

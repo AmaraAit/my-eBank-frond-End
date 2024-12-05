@@ -9,7 +9,7 @@ export class AccountserviceService {
   private baseUrl='http://localhost:8888/ACCOUNT-SERVICE/accounts'
   constructor(private http: HttpClient) { }
 
-  getAccount(id:number):Observable<Object>{
-    return this.http.get('${this.baseUrl}/${id}');
+  getAccountById(id:number):Observable<Object>{
+    return this.http.get(`${this.baseUrl}/${id}`);
   }
 }
